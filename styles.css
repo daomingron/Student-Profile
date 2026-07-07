@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -241,6 +245,32 @@ h2 {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 8px;
+  margin: 12px 0 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-nav a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--accent-strong);
+  font-weight: 700;
+  border: 1px solid rgba(18, 49, 10, 0.14);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.section-nav a:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .btn {
