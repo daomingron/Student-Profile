@@ -258,7 +258,8 @@ h2 {
   width: 100%;
 }
 
-.section-nav a {
+.section-nav a,
+.section-nav .section-nav-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -271,9 +272,11 @@ h2 {
   border: 1px solid rgba(18, 49, 10, 0.14);
   cursor: pointer;
   transition: transform 0.2s ease, background 0.2s ease;
+  font: inherit;
 }
 
-.section-nav a:hover {
+.section-nav a:hover,
+.section-nav .section-nav-btn:hover {
   transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.94);
 }
