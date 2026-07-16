@@ -332,7 +332,8 @@ h2 {
 
 .education-grid,
 .skill-grid,
-.gallery-grid {
+.gallery-grid,
+.projects-grid {
   display: grid;
   gap: 16px;
 }
@@ -367,6 +368,10 @@ h2 {
 
 .gallery-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .contact-grid {
